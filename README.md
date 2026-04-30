@@ -160,7 +160,7 @@ Select your board and port, then Upload.
 ### 2. Connect the webcam and run Calibration.py 
 
 here run the program Calibration.py, place a scale and write the physical length of the scale and mark 2 points on the 
-screen in the running software and press clibrate, paste the value in the robot_control_pc.py
+screen in the running software and press calibrate, paste the value in the robot_control_pc.py
 
 ### 3. Connect PC to ESP32 WiFi
 
