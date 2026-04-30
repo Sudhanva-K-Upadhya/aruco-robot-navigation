@@ -157,14 +157,19 @@ Open `esp32_robot/esp32_robot.ino` in Arduino IDE.
 Install board: **ESP32 by Espressif** via Board Manager.  
 Select your board and port, then Upload.
 
-### 2. Connect PC to ESP32 WiFi
+### 2. Connect the webcam and run Calibration.py 
+
+here run the program Calibration.py, place a scale and write the physical length of the scale and mark 2 points on the 
+screen in the running software and press clibrate, paste the value in the robot_control_pc.py
+
+### 3. Connect PC to ESP32 WiFi
 
 ```
 SSID: RobotAP
 Pass: robot1234
 ```
 
-### 3. Run PC script
+### 4. Run PC script
 
 ```bash
 python robot_control_pc.py
@@ -176,7 +181,7 @@ Press **q** to quit and stop the robot.
 
 ## Calibration Tips
 
-1. **PIXEL_TO_METRE** — place a ruler in camera view, measure a known distance in pixels, compute `metres / pixels`.
+1. **PIXEL_TO_METRE** — place a ruler in camera view, and run the calibration.py
 2. **ANGULAR_KP / LINEAR_KP** — increase if robot is sluggish, decrease if oscillating.
 3. **MAX_RPM** — set to your motor's actual no-load RPM for accurate velocity mapping.
 4. **Marker orientation** — corner 0→1 edge defines robot "forward". Rotate marker on robot if direction is wrong.
