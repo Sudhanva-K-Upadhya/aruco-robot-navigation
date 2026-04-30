@@ -7,7 +7,7 @@ Overhead webcam tracks a differential-drive robot via ArUco markers and autonomo
 ## System Overview
 
 <p align="center">
-  <img src="Methodology.pg" width="600"/>
+  <img src="Methodology.png" width="600"/>
 </p>
 
 *Figure: System architecture
