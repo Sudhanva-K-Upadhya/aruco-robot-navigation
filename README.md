@@ -6,24 +6,11 @@ Overhead webcam tracks a differential-drive robot via ArUco markers and autonomo
 
 ## System Overview
 
-```
-[ Overhead Webcam ]
-        │  USB
-        ▼
-  [ PC — Python ]
-   • ArUco detection (OpenCV)
-   • Forward / Inverse Kinematics
-   • P-controller (heading + distance)
-        │  UDP WiFi
-        ▼
-  [ ESP32 — Arduino ]
-   • WiFi Access Point
-   • UDP receiver task  (core 0)
-   • Motor control task (core 1)
-        │  PWM
-        ▼
-  [ L298N → Motors ]
-```
+<p align="center">
+  <img src="Methodology.png" width="600"/>
+</p>
+
+*Figure: System architecture of the ArUco-based autonomous robot navigation system*
 
 ---
 
